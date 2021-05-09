@@ -1,10 +1,13 @@
 import React from 'react'
-
+import{Container} from 'react-bootstrap'
+import NavBar from '../components/Nav'
 function Search() {
     return (
-        <div>
-            <h1>Search</h1>
-        </div>
+        <Container fluid>
+           <NavBar/>
+        </Container>
+         
+       
     )
 }
 

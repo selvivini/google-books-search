@@ -1,12 +1,20 @@
 import React from 'react'
 import './App.css';
-import Container from '@material-ui/core/Container'
 
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Search from './pages/Search'
+import Saved from './pages/Saved'
+import NotFound from './pages/NotFound'
 function App() {
   return (
-    <Container>
- <h1>hello react!</h1>
-  </Container>
+   <Router>
+     <Switch>
+       <Route exact path ="/" component = {Search}/>
+       <Route exact path ="/saved" component= {Saved}/>
+        <Route component={NotFound}/>
+      </Switch>
+  </Router>
+  
   );
 }
 
