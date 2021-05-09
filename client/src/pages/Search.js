@@ -7,6 +7,7 @@ function Search() {
         <Container fluid>
            <NavBar/>
            <Jumbo/>
+           <h4 className="text-center m-3 p-3 text-danger">Search and save books of interest</h4>
         </Container>
          
         

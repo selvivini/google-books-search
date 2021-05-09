@@ -1,10 +1,13 @@
 import React from 'react'
-
+import{Container} from 'react-bootstrap'
+import NavBar from '../components/Nav'
+import Jumbo from '../components/Jumbotron/Jumbo'
 function Saved() {
     return (
-        <div>
-           <h1>Saved</h1>
-        </div>
+        <Container fluid>
+           <NavBar/>
+           <Jumbo/>
+        </Container>
     )
 }
 

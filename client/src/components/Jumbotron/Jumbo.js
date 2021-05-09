@@ -8,7 +8,7 @@ function Jumbo() {
          <h1 className= 'text-center m-3 p-3 border-3'>React-books-Search</h1>
          </div>
         </Jumbotron>
-        <h4 className="text-center m-3 p-3 text-danger">Search and save books of interest</h4>
+      
         </Container>
     )
 }
