@@ -3,23 +3,24 @@ import React from "react";
 
 function Form({ q, handleInputChange, handleFormSubmit }) {
   return (
+    <div className="container">
     <form>
       <div className="form-group">
         <label htmlFor="Query">
-          <strong>Book</strong>
+          <h1 className="text-info"><strong>Book</strong></h1>
         </label>
         <input
-          className="form-control"
+          className="form-control p-2"
           id="Title"
           type="text"
           value={q}
-          placeholder="Ready Player One"
+          placeholder="Please enter a book name"
           name="q"
           onChange={handleInputChange}
           required
         />
       </div>
-      <div className="pull-right">
+      <div className="pull-right m-3 ">
         <button
           onClick={handleFormSubmit}
           type="submit"
@@ -29,6 +30,7 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
         </button>
       </div>
     </form>
+    </div>
   );
 }
 
