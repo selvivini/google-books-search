@@ -4,7 +4,7 @@ import NavBar from '../components/Nav'
 import Jumbo from '../components/Jumbotron/Jumbo'
 import SavedResult from '../components/SaveResult'
 import Api from '../utils/Api'
-class Saved extends Component() {
+class Saved extends Component {
     state = {
         savedBooks: []
     };
